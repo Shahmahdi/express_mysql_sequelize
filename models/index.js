@@ -35,6 +35,8 @@ db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
 const JunctionModel = require("./junction")(sequelize, Sequelize);
+const DeviceModel = require("./device_category")(sequelize, Sequelize);
 db.junctions = JunctionModel;
+db.devices = DeviceModel;
 
 module.exports = db;
